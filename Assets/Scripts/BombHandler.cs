@@ -13,7 +13,7 @@ public class BombHandler : MonoBehaviour
     [SerializeField] private float _timeToExplosion = 2f;
     [SerializeField] private float _damageValue = 30f;
 
-    private bool _isAlreadyDetonate = false;
+    //private bool _isAlreadyDetonate = false;
 
     private void Awake()
     {
@@ -36,7 +36,7 @@ public class BombHandler : MonoBehaviour
 
     private IEnumerator StartExplosion()
     {
-        _isAlreadyDetonate = true;
+        //_isAlreadyDetonate = true;
 
         while (_timeToExplosion > 0)
         {

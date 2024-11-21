@@ -19,6 +19,10 @@ public class Bootstrap : MonoBehaviour
 
     private void Update()
     {
+    }
+
+    private void FixedUpdate()
+    {
         _character.MoveBehaviour();
     }
 }

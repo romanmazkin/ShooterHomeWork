@@ -16,7 +16,7 @@ public class Character : MonoBehaviour, IDamageable
 
     [SerializeField] private float _startHealthValue;
     [SerializeField] private float _healthValueWhenWounded;
-    [SerializeField] private float _animationDuration = 1f;
+    //[SerializeField] private float _animationDuration = 1f;
     //[SerializeField] private NavMeshAgent _agent;
     //[SerializeField] private Flag _flag;
     //[SerializeField] private LayerMask _mask;

@@ -44,5 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb90fd2818fa2d94283b80363b879e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterPrefab: {fileID: 6725998564042120948, guid: 253783d1717ec664fa3ce9bb04023b76, type: 3}
+  _characterPrefab: {fileID: 2602957038007273344, guid: 253783d1717ec664fa3ce9bb04023b76, type: 3}
   _characterSpawnPoint: {fileID: 3167509850705776952, guid: 2222f797510515446ac829a26014d830, type: 3}
+  _followCamera: {fileID: 0}
