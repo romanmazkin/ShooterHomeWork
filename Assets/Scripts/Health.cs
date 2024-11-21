@@ -1,8 +1,13 @@
-using UnityEngine;
-
-public class Health : MonoBehaviour
+public class Health
 {
-    public float Value { get; set; }
+    public float Value { get; private set; }
+    private float _valueWhenWounded;
+
+    public Health(float value, float valueWhenWounded)
+    {
+        Value = value;
+        _valueWhenWounded = valueWhenWounded;
+    }
 
     public void Damage(float damage)
     {
@@ -13,4 +18,6 @@ public class Health : MonoBehaviour
             Value = 0;
         }
     }
+
+    public bool IsNotZero() => Value != 0;
 }

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1569805205602824820}
+  - component: {fileID: 1801553353799771372}
   m_Layer: 0
   m_Name: CameraTarget
   m_TagString: Untagged
@@ -31,6 +32,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 999888280501245622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1801553353799771372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904765229776800217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d93a8f903806b94bb158dfa1b5a04d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6448088575352919659
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,7 +57,6 @@ GameObject:
   - component: {fileID: 6725998564042120948}
   - component: {fileID: 1789157557210989278}
   - component: {fileID: 8825276394508866731}
-  - component: {fileID: 2993981007922270043}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -107,41 +119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa9f165e2b4f1a4f9522501717c095d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 5
   _startHealthValue: 100
   _healthValueWhenWounded: 40
   _animationDuration: 1
-  _view: {fileID: 7578603364240320678}
-  _agent: {fileID: 8825276394508866731}
-  _health: {fileID: 2993981007922270043}
-  _flag: {fileID: 5289494198418481855, guid: 0ec44c6bc069f5647b84f616eba9f4d2, type: 3}
-  _mask:
-    serializedVersion: 2
-    m_Bits: 64
-  _jumpCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 3.3740587
-      outSlope: 3.3740587
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.022013651
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: -3.4128835
-      outSlope: -3.4128835
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.024754882
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _audioController: {fileID: 1646974658169195439, guid: e94fd5f3ea4d6c5479c030fb7e01bf70, type: 3}
 --- !u!136 &1789157557210989278
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -187,18 +168,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2993981007922270043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6448088575352919659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45d1f5ca4d8e47849996722594187de9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &6814089329168507474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260,7 +229,7 @@ PrefabInstance:
       addedObject: {fileID: 7552983807939567542}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d54fc82172b0ee8408bc7f0454a223d2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7578603364240320678}
+      addedObject: {fileID: 7197711112043330324}
   m_SourcePrefab: {fileID: 100100000, guid: d54fc82172b0ee8408bc7f0454a223d2, type: 3}
 --- !u!1 &5931781624018722563 stripped
 GameObject:
@@ -288,7 +257,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7578603364240320678
+--- !u!114 &7197711112043330324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,9 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5887e2a3e858a44ab937d8ddc4633b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 7552983807939567542}
-  _agent: {fileID: 8825276394508866731}
-  _character: {fileID: 6725998564042120948}
 --- !u!4 &6420509472516670905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d54fc82172b0ee8408bc7f0454a223d2, type: 3}

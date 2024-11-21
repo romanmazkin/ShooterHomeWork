@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Mover : MonoBehaviour
+public class Mover
 {
-    // Start is called before the first frame update
-    void Start()
+    private CharacterController _characterController;
+
+    private float _speed;
+
+    public Mover(CharacterController characterController, float speed)
     {
-        
+        _characterController = characterController;
+        _speed = speed;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MoveTo(Vector3 direction)
     {
-        
+        _characterController.Move(direction.normalized * _speed * Time.deltaTime);
     }
 }
